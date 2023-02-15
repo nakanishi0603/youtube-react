@@ -1,0 +1,19 @@
+.wrap {
+  position: relative;
+  width:100%;
+  //アスペクト比をコントロールする方法
+  //議事要素beforeを使いpaddingを%指定することで実現可能
+  &::before {
+    background: white;
+    display: block;
+    content: '';
+    padding-top: 56.2%;
+  }
+  .video {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
